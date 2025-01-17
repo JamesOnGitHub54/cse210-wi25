@@ -1,9 +1,47 @@
-using System;
-
 class Program
 {
     static void Main(string[] args)
     {
-        Console.WriteLine("Hello Prep4 World!");
+        int userNumber = -1;
+        List<int> numbers = new List<int>();
+
+        //Get Numbers
+        Console.WriteLine("Enter a list of numbers, type 0 when finished.");
+        do
+        {
+            Console.Write("Enter number: ");
+            userNumber = int.Parse(Console.ReadLine());
+            if (userNumber != 0)
+            {
+                numbers.Add(userNumber);
+            }
+
+
+        } while (userNumber != 0);
+
+        //Calculations
+        //Sum
+        int sum = 0;
+        foreach (int number in numbers)
+        {
+            sum = sum + number;
+        }
+
+        //Average
+        float totNumbers = numbers.Count;
+        float average = sum / totNumbers;
+
+        //Largest
+        int largest = 0;
+        foreach (int number in numbers)
+        {
+            if (number > largest)
+            {
+                largest = number;
+            }
+        }
+
+        //Results
+        Console.WriteLine($"The sum is: {sum}\nThe average is: {average}\nThe largest number is: {largest}");
     }
 }
