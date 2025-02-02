@@ -16,7 +16,6 @@ class Program
 4. Save
 5. Quit
 What would you like to do? ");
-            ///choices here
             choice = int.Parse(Console.ReadLine());
             if (choice == 1)
             {
@@ -38,19 +37,7 @@ What would you like to do? ");
             {
                 Console.WriteLine("Bye");
             }
-
-
-
-
-
         }
         while (choice != 5);
-
-
-
-        /// 1 create an entry object to pass to the journal for storage
-
-        //Entry e = new Entry();
-        //e.Display();
     }
 }

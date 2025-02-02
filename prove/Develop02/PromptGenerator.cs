@@ -12,7 +12,6 @@ public class PromptGenerator
 
     public string GetPrompt()
     {
-        /// get random index values and lookup the string in _prompts
-        return "ran";
+        return "A Prompt";
     }
 }
