@@ -31,6 +31,7 @@ public class Breathing(){
         Console.Write("1");
         Thread.Sleep(1000);
         Console.Write("\b \b");
+        Console.WriteLine();
 
     }
 

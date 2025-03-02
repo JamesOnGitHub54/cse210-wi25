@@ -6,9 +6,9 @@ class Program
     {
         Console.Clear();
         Console.WriteLine("Welcome to the Journal Program!");
-        int choice;
+        int choice = 1;
 
-        do
+        while (choice <4)
         {
             Console.Write(@"Menu Options:
     1. Start Breathing Activity
@@ -32,9 +32,8 @@ Select a choice from the menu: ");
             }
             else if (choice == 4)
             {
-                Console.WriteLine("Bye");
+                Console.WriteLine("Thank you! Until next time!");
             }
         }
-        while (choice !> 4 );
     }
 }
